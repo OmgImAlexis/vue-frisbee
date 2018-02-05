@@ -1,6 +1,6 @@
 {
   "name": "vue-frisbee",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small wrapper for integrating frisbee to Vuejs",
   "main": "dist/vue-frisbee.min.js",
   "types": "index.d.ts",
