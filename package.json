@@ -1,33 +1,36 @@
 {
-  "name": "vue-axios",
-  "version": "2.0.2",
-  "description": "A small wrapper for integrating axios to Vuejs",
-  "main": "dist/vue-axios.min.js",
+  "name": "vue-frisbee",
+  "version": "1.0.0",
+  "description": "A small wrapper for integrating frisbee to Vuejs",
+  "main": "dist/vue-frisbee.min.js",
   "types": "index.d.ts",
   "scripts": {
-    "test": "npm run test"
+    "test": "npx xo",
+    "build": "npx gulp",
+    "prepublish": "npm run build"
   },
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/imcvampire/vue-axios.git"
+    "url": "git+https://github.com/OmgImAlexis/vue-frisbee.git"
   },
   "keywords": [
     "vue",
-    "axios",
+    "frisbee",
     "wrapper"
   ],
-  "author": "Nguyen Quoc Anh (imcvampire)",
+  "author": "Alexis Tyler <xo@wvvw.me> (https://wvvw.me/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/imcvampire/vue-axios/issues"
+    "url": "https://github.com/OmgImAlexis/vue-frisbee/issues"
   },
-  "homepage": "https://github.com/imcvampire/vue-axios#readme",
+  "homepage": "https://wvvw.me",
+  "dependencies": {
+    "frisbee": "^1.6.4"
+  },
   "devDependencies": {
-    "axios": "^0.17.1",
     "babel-core": "^6.18.0",
     "babel-preset-es2015": "^6.18.0",
     "gulp": "^3.9.1",
@@ -38,5 +41,14 @@
   },
   "peerDependencies": {
     "vue": ">= 1.0.0"
+  },
+  "xo": {
+    "envs": [
+      "browser"
+    ],
+    "globals": [
+      "define",
+      "Vue"
+    ]
   }
 }

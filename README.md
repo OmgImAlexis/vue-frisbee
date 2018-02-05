@@ -1,38 +1,38 @@
-# vue-axios
-A small wrapper for integrating axios to Vuejs
+# vue-frisbee
+A small wrapper for integrating [Frisbee](https://github.com/niftylettuce/frisbee) to Vuejs
 
 ## How to install:
 ### CommonJS:
-```
-npm install --save axios vue-axios
+```console
+$ yarn add frisbee vue-frisbee
 ```
 
 And in your entry file:
-```
-import Vue from 'vue'
-import axios from 'axios'
-import VueAxios from 'vue-axios'
+```js
+import Vue from 'vue';
+import frisbee from 'frisbee';
+import VueFrisbee from 'vue-frisbee';
 
-Vue.use(VueAxios, axios)
+Vue.use(VueFrisbee, frisbee);
 ```
 
 ### Script:
-Just add 3 scripts in order: `vue`, `axios` and `vue-axios` to your `document`.
+Just add 3 scripts in order: `vue`, `frisbee` and `vue-frisbee` to your `document`.
 
 ## Usage:
-This wrapper bind `axios` to `Vue` or `this` if you're using single file component.
+This wrapper will bind `frisbee` to `Vue` or `this` if you're using single file component.
 
-You can `axios` like this:
-```
-Vue.axios.get(api).then((response) => {
-  console.log(response.data)
-})
+You can `frisbee` like this:
+```js
+Vue.frisbee.get('/').then(res => {
+  console.log(res.body);
+});
 
-this.axios.get(api).then((response) => {
-  console.log(response.data)
-})
+this.frisbee.get('/').then(res => {
+  console.log(res.body);
+});
 
-this.$http.get(api).then((response) => {
-  console.log(response.data)
-})
+this.$http.get('/').then(res => {
+  console.log(res.body);
+});
 ```

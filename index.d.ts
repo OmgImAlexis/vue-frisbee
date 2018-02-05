@@ -1,21 +1,21 @@
-import Vue, {PluginFunction, PluginObject} from "vue";
-import {AxiosInstance} from "axios";
+import Vue, {PluginFunction, PluginObject} from 'vue';
+import {FrisbeeInstance} from 'frisbee';
 
-declare module "vue/types/vue" {
+declare module 'vue/types/vue' {
 
   interface Vue {
-    axios: AxiosInstance;
-    $http: AxiosInstance;
+    frisbee: FrisbeeInstance;
+    $http: FrisbeeInstance;
   }
 
   namespace Vue {
-    const axios: AxiosInstance;
+    const frisbee: FrisbeeInstance;
   }
 
 }
 
-declare class VueAxios {
-  static install: PluginFunction<AxiosInstance>;
+declare class VueFrisbee {
+  static install: PluginFunction<FrisbeeInstance>;
 }
 
-export = VueAxios
+export = VueFrisbee;
