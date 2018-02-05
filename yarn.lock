@@ -828,7 +828,7 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-frisbee@^1.6.4:
+frisbee@*:
   version "1.6.4"
   resolved "https://registry.yarnpkg.com/frisbee/-/frisbee-1.6.4.tgz#af3bf2ed64f94cf2b97ce5c65d14c49346d43009"
   dependencies:
