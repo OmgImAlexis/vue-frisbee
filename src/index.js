@@ -25,8 +25,11 @@
      }
    }
 
-   Vue.Frisbee = new Frisbee(opts);
-   Vue.$http = new Frisbee(opts);
+   const frisbee = new Frisbee(opts);
+   Vue.Frisbee = frisbee;
+   Vue.prototype.Frisbee = frisbee;
+   Vue.$http = frisbee;
+   Vue.prototype.$http = frisbee;
  };
 
  if (typeof exports === 'object') {
