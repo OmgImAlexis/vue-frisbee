@@ -41,7 +41,7 @@
     "gulp-babel": "7.0.1",
     "gulp-rename": "1.2.3",
     "gulp-uglifyjs": "0.6.2",
-    "vue": "2.5.16"
+    "vue": "2.6.12"
   },
   "peerDependencies": {
     "vue": ">= 1.0.0"
